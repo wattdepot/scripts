@@ -1,7 +1,7 @@
 scripts
 =======
 
-Shell scripts to simplify development of the WattDepot site. 
+Shell scripts to simplify development of the WattDepot site. Note that you will need to have [Jekyll](http://jekyllrb.com/) installed to run all the scripts other than `wattdepot-install.sh`.
 
 wattdepot-install.sh
 --------------------
