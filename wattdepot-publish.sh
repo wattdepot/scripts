@@ -19,8 +19,8 @@ echo "Generating HTML site into master directory"
 ( set -x ; jekyll build --source ./src/src --destination ./master)
 
 echo "Committing the src branch."
-( set -x ; cd ./src ; git add . ; git commit -a -m "$1" ; git push origin src ) 
+( set -x ; cd ./src ; git add --all . ; git commit -a -m "$1" ; git push origin src ) 
 
 echo "Committing the master branch"
-( set -x ; cd ./master ; git add . ; git commit -a -m "$1" ; git push origin master ) 
+( set -x ; cd ./master ; git add --all . ; git commit -a -m "$1" ; git push origin master ) 
 
