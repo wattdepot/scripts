@@ -15,6 +15,9 @@ if [ $# != 1 ]; then
     exit 1
 fi
 
+echo "Git pulling master to ensure local and remote are synced."
+( set -x ; cd ./master ; git pull ) 
+
 echo "Generating HTML site into master directory"
 ( set -x ; jekyll build --source ./src/src --destination ./master)
 
